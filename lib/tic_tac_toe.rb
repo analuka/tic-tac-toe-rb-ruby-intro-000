@@ -100,17 +100,17 @@ def winner(board)
   end
 end
 
-# def play(board)
-#   until over?(board)
-#     turn(board)
-#   end
-#   if won?(board)
-#     winner_token = winner(board)
-#     puts "Congratulations #{winner_token}!"
-#   elsif draw?(board)
-#     puts "Cat\'s Game!"
-#   end
-# end
+def play(board)
+  until over?(board)
+    turn(board)
+  end
+  if won?(board)
+    winner_token = winner(board)
+    puts "Congratulations #{winner_token}!"
+  elsif draw?(board)
+    puts "Cat\'s Game!"
+  end
+end
 
 def play(board)
   turn(board) until over?(board)
